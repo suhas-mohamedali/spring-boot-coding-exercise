@@ -9,11 +9,6 @@ public class FunctionalIT {
   }
 
   @Karate.Test
-  Karate testHelloWorld() {
-    return Karate.run("helloworld").relativeTo(getClass());
-  }
-
-  @Karate.Test
   Karate testGitHub() {
     return Karate.run("github").relativeTo(getClass());
   }
