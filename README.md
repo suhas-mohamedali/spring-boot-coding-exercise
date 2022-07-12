@@ -51,21 +51,3 @@ The following fields should be returned:
 
       curl --location --request GET 'http://localhost:8080/hottest-repos?repos_limit=1'
 
-
-**2. Find the oldest user accounts with zero followers**
-
-        html_url
-
-Use the [GitHub API][1] to expose an endpoint in this microservice that will find the oldest
-accounts with zero followers.
-
-The endpoint should accept a parameter that sets the number of accounts to return.
-
-The following fields should be returned:
-
-      id
-      login
-      html_url
-
-
-[1]: http://developer.github.com/v3/search/#search-repositories
